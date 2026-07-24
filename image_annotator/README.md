@@ -1,13 +1,28 @@
 ## Image Annotation and Classification Tool
-This tool annotates and classifies images (e.g., cats/dogs) using a Tkinter-based GUI.
+This project serves as a technical case study demonstrating human-in-the-loop AI data workflows, image annotation systems, supervised machine learning pipelines, and model performance evaluation.
 
-### Features
-- Label 100 images (50 cats, 50 dogs) with 300X300 resizing using a Tkinter-based GUI.
-- Train a CNN on 64x64 images, reporting training, validation, and test accuracies.
+As project lead, I designed the annotation workflow, defined labeling objectives, developed the data preparation pipeline, implemented the PyTorch classification workflow, and evaluated model performance to understand the impact of training data quality.
 
+The tool enables human reviewers to label image datasets through a Tkinter-based interface and trains a CNN classifier using the generated annotations.
+
+### Human-in-the-Loop AI Workflow
+- **Image Annotation:** Supports manual labeling of image datasets through a GUI-based annotation workflow.
+- **Structured Dataset Generation:** Converts human-generated labels into structured training data for machine learning workflows.
+- **CNN Classification Pipeline:** Trains a PyTorch-based convolutional neural network using annotated image data.
+- **Model Evaluation:** Reports training, validation, and test performance to assess classification quality.
+- **Data Quality Validation:** Includes tools for verifying labels, checking image integrity, and maintaining annotation consistency.
+  
 ### Screenshots
 ![Cat Image GUI](screenshots/gui_image_loaded.png)
 ![Dog Image GUI](screenshots/gui_dog_image.png)
+
+### Technical Leadership
+As project lead, I was responsible for:
+- Designing human-in-the-loop image annotation workflows.
+- Defining labeling standards and dataset preparation processes.
+- Integrating annotation outputs with supervised learning pipelines.
+- Developing evaluation approaches for model performance measurement.
+- Analyzing tradeoffs between dataset size, annotation quality, and model accuracy.
 
 ### Files
 - `requirements.txt`: Lists all Python dependencies required to run the tool.
@@ -119,5 +134,6 @@ This tool annotates and classifies images (e.g., cats/dogs) using a Tkinter-base
     - You can also start typing the path in the terminal and use tab completion to fill it in.  
 
 ### Development Notes
-- Application developed through iterative prompt engineering with AI tools (Claude/Grok) for rapid prototyping and learning.
-- CNN architecture specifically adapted from xAI's Grok as part of PyTorch learning process.
+- AI-assisted development tools (Claude and Grok) were used to accelerate prototyping, debugging, documentation, and implementation.
+- As project lead, I directed workflow design, technical decisions, evaluation strategy, and iterative refinement.
+- The CNN implementation was developed through iterative experimentation with PyTorch architectures and model evaluation techniques.
