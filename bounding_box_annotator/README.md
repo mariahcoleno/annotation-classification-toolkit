@@ -1,13 +1,15 @@
 ## Bounding Box Annotation Tool
-This project serves as a technical case study demonstrating image annotation workflows, structured AI data generation, and human-in-the-loop data preparation for machine learning systems.
+This project serves as a technical case study demonstrating computer vision annotation workflows, structured AI data generation, and human-in-the-loop data preparation for machine learning systems.
+
+As project lead, I designed the annotation workflow, defined labeling requirements, and developed tooling to support creation of structured image datasets for computer vision model development and evaluation.
 
 The tool provides a GUI-based workflow for creating labeled image datasets by drawing bounding boxes around objects, assigning labels, and exporting structured annotations for downstream machine learning workflows.
 
 ### Features
-- Draw bounding boxes around objects in images via Tkinter GUI
-- Assign text labels to annotated objects
-- Save annotations and navigate between images
-- Export annotations to CSV format
+- **Object Annotation:** Enables users to draw bounding boxes around objects in images using a GUI-based labeling workflow.
+- **Structured Dataset Generation:** Stores object locations and labels in a structured format for machine learning workflows.
+- **Annotation Management:** Supports image navigation, label assignment, saving annotations, and exporting results to CSV.
+- **Computer Vision Data Preparation:** Provides foundational tooling for preparing labeled datasets used in object detection and classification systems.
 
 ## Technical Purpose
 This tool was designed to support AI model development workflows by enabling:
@@ -115,4 +117,4 @@ x# Tips
 
 ### Development Notes
 - AI-assisted development tools (Claude and Grok) were used to accelerate prototyping, debugging, documentation, and implementation.
-- As project lead, I directed the workflow design, data annotation strategy, and technical implementation decisions.
+- As project lead, I directed workflow design, data annotation strategy, evaluation considerations, and technical implementation decisions.
