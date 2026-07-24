@@ -1,13 +1,28 @@
 ## Hypothesis Annotation Tool
-This tool annotates text hypotheses with or without corresponding images using a Tkinter-based GUI.
+This project serves as a technical case study demonstrating human-in-the-loop annotation workflows, multimodal data labeling, and structured dataset generation for AI model development.
 
-### Features
-- Label hypotheses as supported, refuted, or unsure using a Tkinter-based GUI
-- Undo and save annotations with export to CSV functionality
+As project lead, I designed the annotation workflow, defined labeling objectives, implemented the annotation interface, and developed data management processes to support consistent human review of text and image-based hypotheses.
+
+The tool enables human reviewers to classify hypotheses as supported, refuted, or uncertain while generating structured annotation datasets for downstream AI evaluation and model improvement.
+
+### Human-in-the-Loop Annotation Workflow
+- **Multimodal Annotation:** Supports labeling text hypotheses with optional corresponding image inputs.
+- **Structured Classification:** Enables reviewers to classify hypotheses as supported, refuted, or uncertain.
+- **Annotation Management:** Provides save, undo, and CSV export functionality for dataset creation.
+- **Data Persistence:** Stores annotations in SQLite for structured review and analysis.
+- **Extensible Dataset Design:** Supports adding additional text and image examples for expanded annotation workflows.
 
 ### Screenshots
 ![Text Hypothesis GUI](screenshots/Text_hypothesis_GUI.png)
 ![Image Hypothesis GUI](screenshots/Image_hypothesis_GUI.png)
+
+## Technical Leadership
+As project lead, I was responsible for:
+- Designing human review workflows for AI training data generation.
+- Defining annotation categories and labeling objectives.
+- Building tooling to improve consistency and traceability of human-generated labels.
+- Creating structured exports for downstream analysis and AI evaluation.
+- Balancing manual review workflows with scalable dataset generation practices.
 
 ### Files
 - `hypothesis_annotator.py`: Main script with GUI for annotating hypotheses.
@@ -95,4 +110,6 @@ This tool annotates text hypotheses with or without corresponding images using a
   3. Proceed to the "Run the Tool" section above.
 
 ### Development Notes
-- Application developed through iterative prompt engineering with AI tools (Claude/Grok) for rapid prototyping and learning.
+- AI-assisted development tools (Claude and Grok) were used to accelerate prototyping, debugging, documentation, and implementation.
+- As project lead, I directed annotation workflow design, system architecture, product requirements, and technical implementation decisions.
+- Iterative testing was used to refine usability, data quality, and annotation reliability.
