@@ -1,11 +1,20 @@
 ## Bounding Box Annotation Tool
-This tool annotates objects in images with bounding boxes and text labels with a Tkinter-based GUI.
+This project serves as a technical case study demonstrating image annotation workflows, structured AI data generation, and human-in-the-loop data preparation for machine learning systems.
+
+The tool provides a GUI-based workflow for creating labeled image datasets by drawing bounding boxes around objects, assigning labels, and exporting structured annotations for downstream machine learning workflows.
 
 ### Features
 - Draw bounding boxes around objects in images via Tkinter GUI
 - Assign text labels to annotated objects
 - Save annotations and navigate between images
 - Export annotations to CSV format
+
+## Technical Purpose
+This tool was designed to support AI model development workflows by enabling:
+- Creation of structured training datasets through manual annotation.
+- Consistent labeling workflows for computer vision tasks.
+- Export of labeled data for downstream machine learning pipelines.
+- Human-in-the-loop quality control during dataset preparation.
 
 ### Screenshots
 ![Cat Bounding Box Image GUI](screenshots/Cat_bounding_box_gui_image.png)
@@ -105,4 +114,5 @@ x# Tips
     - You can also start typing the path in the terminal and use tab completion to fill it in.
 
 ### Development Notes
-- Application developed through iterative prompt engineering with AI tools (Claude/Grok) for rapid prototyping and learning.
+- AI-assisted development tools (Claude and Grok) were used to accelerate prototyping, debugging, documentation, and implementation.
+- As project lead, I directed the workflow design, data annotation strategy, and technical implementation decisions.
