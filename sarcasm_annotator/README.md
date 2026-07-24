@@ -1,16 +1,28 @@
 ## Sarcasm Annotation and Classification Tool
-This tool annotates and classifies text for sarcasm using a Tkinter-based GUI.
+This project serves as a technical case study demonstrating human-in-the-loop AI data workflows, NLP annotation systems, text classification pipelines, and model evaluation.
 
-### Features
-- Label text as sarcastic, not sarcastic, or unsure using a Tkinter-based GUI
-- Undo annotations and export to CSV
-- Track progress with "Labeled: X/Y" counter
-- Includes 23 predefined sample texts for immediate use
-- Train a Scikit-learn logistic regression classifier with TF-IDF vectorization on labeled texts, reporting training, validation, and test accuracies.
+As project lead, I designed the annotation workflow, defined labeling objectives, developed the text classification pipeline, and evaluated model performance to understand the relationship between human-generated training data and machine learning outcomes.
+
+The tool enables human reviewers to annotate text for sarcasm detection and trains a machine learning classifier using the resulting labeled dataset.
+
+### Human-in-the-Loop NLP Workflow
+- **Text Annotation:** Supports manual labeling of text samples as sarcastic, not sarcastic, or uncertain through a GUI-based workflow.
+- **Structured Dataset Generation:** Converts human annotations into labeled datasets for supervised machine learning.
+- **NLP Classification Pipeline:** Trains a Scikit-learn logistic regression classifier using TF-IDF text representations.
+- **Model Evaluation:** Measures training, validation, and test performance to evaluate classification effectiveness.
+- **Flexible Annotation Management:** Supports undo operations, progress tracking, database persistence, and CSV export.
 
 ### Screenshots
 ![Sarcasm Annotation Text GUI example 1](screenshots/gui_text_loaded.png)
 ![Sarcasm Annotation Text GUI example 2](screenshots/sarcasm_gui.png)
+
+## Technical Leadership
+As project lead, I was responsible for:
+- Designing annotation workflows for NLP model training data generation.
+- Defining labeling categories and annotation strategies.
+- Integrating human-generated labels with machine learning pipelines.
+- Evaluating model performance and dataset limitations.
+- Analyzing the impact of annotation quality on classification results.
 
 ### Files
 - `requirements.txt`: Lists all Python dependencies required to run the tool.
@@ -95,4 +107,6 @@ This tool annotates and classifies text for sarcasm using a Tkinter-based GUI.
 - Automatic loading from sample_texts.txt simplifies the user experience.
 
 ### Development Notes
-- Application developed through iterative prompt engineering with AI tools (Claude/Grok) for rapid prototyping and learning.
+- AI-assisted development tools (Claude and Grok) were used to accelerate prototyping, debugging, documentation, and implementation.
+- As project lead, I directed workflow design, technical decisions, evaluation strategy, and iterative refinement.
+- The NLP classification pipeline was developed through experimentation with TF-IDF feature engineering, logistic regression, and model evaluation techniques.
