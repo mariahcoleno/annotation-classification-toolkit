@@ -1,14 +1,18 @@
 ## Emotion and Intent Annotation and Classification Tool 
-This tool annotates and classifies emotions and intents in text, audio, and video segments using AI suggestions with SHAP explainability in a Tkinter-based GUI.
+This project serves as a technical case study demonstrating multimodal AI data workflows, human-in-the-loop annotation systems, AI-assisted labeling, and explainable machine learning evaluation.
 
-### Features
-- **Multi-format support**: Upload text (.txt) or media files (.wav, .mp3, .m4a, .mp4, .mov)
-- **Audio transcription**: Convert audio/video to text using Whisper with automatic segmentation
-- **AI-powered suggestions**: Context-aware emotion (happy, sad, sarcastic, angry, neutral) and intent (inform, persuade, joke, complain) predictions
-- **Explainability**: SHAP visualizations show word contributions to AI suggestions
-- **Interactive editing**: Edit text segments with save functionality
-- **Annotation management**: Save to SQLite database, undo annotations, export to CSV
-- **Smart segmentation**: Automatic text splitting at disclosure markers (e.g., "actually")
+As project lead, I designed the annotation workflow, defined data quality objectives, architected the multimodal processing pipeline, and developed tooling to support AI data generation and model improvement across text, audio, and video modalities.
+
+The tool enables human reviewers to annotate emotional and intent-based signals while leveraging AI-generated suggestions, speech transcription, and SHAP-based explainability to improve labeling consistency and transparency.
+
+### Multimodal AI Data Workflow
+- **Multi-format Support:** Processes text, audio, and video inputs for multimodal annotation workflows.
+- **Speech Processing Pipeline:** Converts audio/video content into segmented text using OpenAI Whisper transcription.
+- **AI-Assisted Label Suggestions:** Generates context-aware emotion and intent predictions to support human annotation.
+- **Explainability:** Uses SHAP visualizations to show feature contributions behind AI-generated suggestions.
+- **Human-in-the-Loop Annotation:** Enables reviewers to validate, edit, and refine AI-generated labels before saving.
+- **Data Management:** Stores annotations in SQLite and exports structured datasets for downstream analysis.
+- **Smart Segmentation:** Automatically separates text into meaningful annotation segments.
 
 ### Screenshots
 #### GUI Screenshots
@@ -23,9 +27,18 @@ This tool annotates and classifies emotions and intents in text, audio, and vide
 ![SHAP Waterfall Plot Segment 1](screenshots/shap_waterfall_segment1.png)
 ![SHAP Waterfall Plot Segment 2](screenshots/shap_waterfall_segment2.png)
 
+### Technical Leadership
+As project lead, I was responsible for:
+- Designing a human-in-the-loop annotation framework for multimodal AI data.
+- Defining annotation objectives and data quality considerations.
+- Integrating speech recognition, NLP models, and explainability methods into a unified workflow.
+- Evaluating AI-generated suggestions against human review processes.
+- Designing workflows that balance automation efficiency with human validation.
+- Establishing explainability mechanisms to improve trust and transparency in AI-assisted labeling.
+
 ### Files
 - `requirements.txt`: Lists all Python dependencies required to run the tool.
-- `src/setup_db.py`: Initializes SQLite databse.
+- `src/setup_db.py`: Initializes SQLite database.
 - `src/process_text.py`: Text segmentation and AI suggestions.
 - `src/annotate_emotions.py`: The main script that runs a Tkinter-based GUI to display texts from `emotions_intents.sqlite` and save annotations (emotions/intents) to the database.
 - `src/audio.py`: Handles audio transcriptions using openai-whisper and segments transcriptions for annotation. 
@@ -49,7 +62,7 @@ This tool annotates and classifies emotions and intents in text, audio, and vide
 - nltk - for natural language toolkit (sentence segmentation)
 - librosa - for advanced audio analysis and feature extraction from audio files
 - opencv-python-headless - for video processing and frame extraction (headless version without GUI dependencies)
-- pydub - for audio file format conversion and basic audio manipulationpydub
+- pydub - for audio file format conversion and basic audio manipulation
 
 ### Setup and Usage
 #### Option 1: From GitHub (First Time Setup)
@@ -133,6 +146,6 @@ The repository includes an example text file for testing text segmentation and a
   - README.md
 
 ### Development Notes
-- Application developed through iterative prompt engineering with AI tools (Claude/Grok) for rapid prototyping and learning.
-- SHAP implementation for emotion/intent explanation developed through iterative troubleshooting and refinement.
-
+- AI-assisted development tools (Claude and Grok) were used to accelerate prototyping, debugging, documentation, and implementation.
+- As project lead, I directed system architecture, annotation workflow design, AI evaluation strategy, and technical implementation decisions.
+- SHAP-based explainability workflows required iterative experimentation and refinement to improve interpretability of AI-generated recommendations.
